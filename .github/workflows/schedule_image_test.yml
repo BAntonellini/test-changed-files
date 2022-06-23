@@ -40,4 +40,4 @@ jobs:
         with:
           context: schedule/images/test
           push: true
-          tags: "$HUB_USER/balboa-test:latest"
+          tags: ${{env.HUB_USER}}/balboa-test:latest
