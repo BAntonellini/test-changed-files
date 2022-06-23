@@ -30,5 +30,3 @@ jobs:
       - name: Get changed images
         id: changed-images
         uses: tj-actions/changed-files@v23
-        with:
-          path: schedule/images
