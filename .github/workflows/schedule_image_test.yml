@@ -32,12 +32,12 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v2
         with:
-          username: ${{HUB_USER}}
-          password: ${{HUB_PASS}}
+          username: bantonellini
+          password: Convexa*123
 
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
           context: schedule/images/test
           push: true
-          tags: ${{HUB_USER}}/balboa-test:latest
+          tags: bantonellini/balboa-test:latest
