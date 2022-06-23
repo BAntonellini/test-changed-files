@@ -10,17 +10,14 @@ on:
     paths:
       - "schedule/images/test/*"
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+env:
+  HUB_USER: bantonellini
+  HUB_PASS: Convexa*123
 
 jobs:
   build:
     runs-on: ubuntu-latest
     name: Image build and push
-
-    env:
-      HUB_USER: bantonellini
-      HUB_PASS: Convexa*123
 
     steps:
       - name: Set up QEMU
