@@ -31,11 +31,11 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: bantonellini
-          password: Lola*5014
+          password: Convexa*123
 
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
           context: schedule/images/test
           push: true
-          tags: balboa-test:latest
+          tags: bantonellini/balboa-test:latest
