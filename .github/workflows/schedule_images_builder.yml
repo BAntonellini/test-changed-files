@@ -20,7 +20,7 @@ jobs:
     name: Image build and push
 
     env:
-      DOCKERHUB_USER: antonellinibruno@gmail.com
+      DOCKERHUB_USER: bantonellini
       DOCKERHUB_PASS: Lola*5014
 
     steps:
